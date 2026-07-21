@@ -1,0 +1,200 @@
+name: Reportar um bug
+description: Informe um problema na tradução PT-BR de forma reproduzível.
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a melhorar a tradução.
+
+        Antes de continuar, use a versão mais recente, pesquise relatos existentes
+        e não anexe ROMs (`.gba`), BIOS, savestates ou links para conteúdo protegido.
+        Este relato e seus anexos serão públicos.
+
+  - type: checkboxes
+    id: verificacoes
+    attributes:
+      label: Verificações iniciais
+      options:
+        - label: Estou usando a Release mais recente da tradução.
+          required: true
+        - label: Confirmei o SHA-256 da ROM base e do patch com os valores publicados no README.
+          required: true
+        - label: Pesquisei as issues abertas e fechadas e não encontrei o mesmo problema.
+          required: true
+
+  - type: dropdown
+    id: versao
+    attributes:
+      label: Versão da tradução
+      options:
+        - v1.2.1
+    validations:
+      required: true
+
+  - type: input
+    id: hash_resultado
+    attributes:
+      label: SHA-256 da ROM resultante
+      description: Informe somente o hash da ROM modificada; nunca envie o arquivo `.gba`.
+      placeholder: 64 caracteres hexadecimais
+
+  - type: dropdown
+    id: plataforma
+    attributes:
+      label: Sistema ou dispositivo
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - GBA real ou flashcart
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: emulador
+    attributes:
+      label: Emulador, core ou dispositivo
+      description: Informe o nome e a versão exata. Em hardware real, informe o console e o flashcart.
+      placeholder: "Exemplo: mGBA 0.10.5 no macOS"
+    validations:
+      required: true
+
+  - type: input
+    id: aplicador
+    attributes:
+      label: Aplicador do patch
+      description: Informe o nome, a versão e o sistema da ferramenta usada para aplicar o BPS.
+      placeholder: "Exemplo: Floating IPS 1.31 no Windows 11"
+
+  - type: dropdown
+    id: origem_save
+    attributes:
+      label: Origem do save
+      options:
+        - Novo jogo iniciado na versão atual
+        - Save comum vindo de uma versão anterior da tradução
+        - Save comum vindo da ROM original
+        - Savestate
+        - O problema acontece antes de existir um save
+        - Não sei
+    validations:
+      required: true
+
+  - type: textarea
+    id: configuracao
+    attributes:
+      label: Configurações relevantes
+      description: Informe BIOS, cheats, fast-forward, rewind, frameskip, outros patches e qualquer ajuste fora do padrão.
+      placeholder: |
+        BIOS:
+        Cheats:
+        Outros patches:
+        Configurações diferentes do padrão:
+
+  - type: textarea
+    id: ponto_inicial
+    attributes:
+      label: Local e momento exatos
+      description: Informe capítulo, mapa, sala, personagem, posição e a última ação ou fala antes do problema.
+      placeholder: |
+        Capítulo ou evento:
+        Mapa e sala:
+        Posição do protagonista:
+        Última ação ou fala:
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Comece do carregamento normal do jogo ou do ponto informado e enumere cada ação.
+      placeholder: |
+        1. Inicie ou carregue o jogo...
+        2. Entre em...
+        3. Fale com...
+        4. O problema aparece quando...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequencia
+    attributes:
+      label: Frequência
+      options:
+        - Acontece sempre
+        - Acontece na maioria das vezes
+        - Acontece algumas vezes
+        - Aconteceu apenas uma vez
+    validations:
+      required: true
+
+  - type: dropdown
+    id: comparacao_original
+    attributes:
+      label: Comparação com a versão original
+      options:
+        - Não acontece na ROM original
+        - Também acontece na ROM original
+        - Não consegui testar na ROM original
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+      description: Descreva como a tela, o texto, a câmera, o evento ou a batalha deveria funcionar.
+    validations:
+      required: true
+
+  - type: textarea
+    id: obtido
+    attributes:
+      label: Resultado obtido
+      description: Descreva exatamente o que ocorreu e se o jogo travou, continuou ou exibiu algo incorreto.
+    validations:
+      required: true
+
+  - type: textarea
+    id: texto_afetado
+    attributes:
+      label: Texto afetado
+      description: Copie exatamente o texto exibido e diga onde aparece. Para bugs sem texto, escreva “não se aplica”.
+      placeholder: |
+        Texto exibido:
+        Texto esperado, se conhecido:
+        Menu, NPC, mapa, sala ou batalha:
+    validations:
+      required: true
+
+  - type: textarea
+    id: anexos
+    attributes:
+      label: Capturas ou vídeo
+      description: Arraste capturas ou um vídeo curto. Não anexe ROM, BIOS, save, savestate ou dados pessoais.
+      placeholder: Arraste os arquivos aqui ou cole links públicos.
+
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: Outras informações
+      description: Inclua mensagens de erro, testes já feitos ou qualquer detalhe que possa ajudar.
+
+  - type: checkboxes
+    id: confirmacoes_finais
+    attributes:
+      label: Confirmações finais
+      options:
+        - label: Tentei reproduzir após iniciar o jogo normalmente e sem cheats, quando possível.
+          required: true
+        - label: Não anexei ROM, BIOS, save, savestate, link de pirataria nem informações pessoais.
+          required: true
+        - label: Estou ciente de que este relato é público e pode ser analisado com ferramentas automatizadas, incluindo o Codex, para diagnóstico.
+          required: true

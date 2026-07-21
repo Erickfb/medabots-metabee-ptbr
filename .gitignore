@@ -1,0 +1,15 @@
+# Este repositório usa uma lista explícita de arquivos públicos.
+# Tudo o que não estiver liberado abaixo permanece ignorado.
+/*
+!/.gitignore
+!/README.md
+!/NOTICE.md
+!/.github/
+
+/.github/*
+!/.github/FUNDING.yml
+!/.github/ISSUE_TEMPLATE/
+
+/.github/ISSUE_TEMPLATE/*
+!/.github/ISSUE_TEMPLATE/bug_report.yml
+!/.github/ISSUE_TEMPLATE/config.yml
