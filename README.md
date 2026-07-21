@@ -10,12 +10,14 @@ brasileiro, criada por [@Erickfb](https://github.com/Erickfb).
 
 ## Versão atual
 
-**PT-BR v1.2.2** — tradução 100% concluída, incluindo diálogos, menus,
+**PT-BR v1.2.3** — tradução 100% concluída, incluindo diálogos, menus,
 batalhas, itens, mapas, mensagens de sistema, fontes, interface e créditos.
 
-Esta versão melhora a assinatura da tela de título para `Traduzido por
-ERICKFB` e mantém a correção do desalinhamento da câmera ao trocar de sala no
-começo do jogo.
+Esta versão traduz a tela de entrada de nome e conclui uma revisão das demais
+interfaces gráficas fixas: itens, salvar/carregar, aviso de save perdido,
+lojas, conexão, troca de Medapeças, movimentação de medalha, nível, créditos e
+modo de teste. Ela também mantém a assinatura `Traduzido por ERICKFB` e a
+correção do desalinhamento da câmera ao trocar de sala no começo do jogo.
 
 ## Como instalar
 
@@ -30,13 +32,13 @@ Você precisa de uma cópia limpa e obtida legalmente da versão americana de
    em um novo arquivo.
 5. Confira o SHA-256 da ROM resultante antes de jogar.
 
-### Checksums da v1.2.2
+### Checksums da v1.2.3
 
 | Arquivo | SHA-256 |
 | --- | --- |
 | ROM base americana limpa (não distribuída) | `78c3b7f9ac9dbc4380237d08743a82fb04c92fb0a67c3d1803e7df5e2cea92c5` |
-| Patch `medabots-metabee-ptbr-v1.2.2.bps` | `d7d83a0b278d5d284972b3946de52e6938853e68b3dafff42f7a3ed39a73bae9` |
-| ROM resultante da v1.2.2 (não distribuída) | `b8c1caf04a1bb427b51632e00cfe32c5481c24f33702ef561247115cbf6f1d8a` |
+| Patch `medabots-metabee-ptbr-v1.2.3.bps` | `1d4b91a2a73b3ec982e09c25910c1d5b62ea6c7868e187c04f2ac8924506f62e` |
+| ROM resultante da v1.2.3 (não distribuída) | `c91f58cdab919ba76d0eec1a14cca194ef4dcf8d0d16fef5f059e5e2a1841ec5` |
 
 No Windows, use `Get-FileHash ARQUIVO -Algorithm SHA256` no PowerShell. No
 macOS ou Linux, use `shasum -a 256 ARQUIVO`.
