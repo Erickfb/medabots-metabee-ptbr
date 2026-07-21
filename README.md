@@ -56,10 +56,13 @@ Antes de relatar:
 ## Apoie o projeto
 
 A tradução e o patch são e continuarão gratuitos. Se este projeto foi útil,
-será possível apoiar voluntariamente o tempo dedicado à tradução, aos testes,
-às correções e à documentação assim que o perfil público de apoio estiver
-ativado. O apoio não representa a compra do jogo e não fornece ROMs ou outro
-conteúdo protegido.
+você pode apoiar voluntariamente o tempo dedicado à tradução, aos testes, às
+correções e à documentação:
+
+[Apoiar o projeto no Ko-fi](https://ko-fi.com/erickfb)
+
+O apoio não representa a compra do jogo, não dá acesso antecipado e não
+fornece ROMs nem qualquer outro conteúdo protegido.
 
 ## Créditos
 
