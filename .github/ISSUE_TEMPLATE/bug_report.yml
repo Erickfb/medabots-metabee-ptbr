@@ -13,7 +13,7 @@ body:
         e não anexe ROMs (`.gba`), BIOS, savestates ou links para conteúdo protegido.
         Este relato e seus anexos serão públicos.
 
-        Na v1.2.6, rótulos pré-renderizados em gráficos permanecem no inglês
+        Na v1.2.7, rótulos pré-renderizados em gráficos permanecem no inglês
         original por decisão de estabilidade. Não reporte apenas um desses
         rótulos; reporte corrupção, recorte, deslocamento ou texto dinâmico em inglês.
 
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Versão da tradução
       options:
-        - v1.2.6
+        - v1.2.7
     validations:
       required: true
 

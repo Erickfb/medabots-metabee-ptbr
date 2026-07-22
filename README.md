@@ -10,7 +10,7 @@ brasileiro, criada por [@Erickfb](https://github.com/Erickfb).
 
 ## Versão atual
 
-**PT-BR v1.2.6** — 100% dos textos localizáveis extraídos estão traduzidos e
+**PT-BR v1.2.7** — 100% dos textos localizáveis extraídos estão traduzidos e
 revisados. Nomes próprios, marcas e rótulos de botões físicos são preservados
 quando apropriado.
 
@@ -18,6 +18,13 @@ Esta versão restaura os gráficos fixos originais para eliminar textos cortados
 sobrepostos ou fora do layout. Ela mantém a correção do desalinhamento da câmera
 no começo do jogo e exibe `Traduzido por ERICKFB` na tela de título e a
 atribuição textual nos créditos finais.
+
+A v1.2.7 também corrige a corrupção restante nos nomes dinâmicos da loja e em
+outras listas compactas. O caso reportado era causado pelo `Í` de
+`INTERMÍSSIL`, agora exibido como `INTERMISSIL`. Essas telas usam a fonte
+original do jogo e, por isso, nomes como `REVOLVER` e `MISSIL` também aparecem
+sem diacríticos; isso impede que uma letra acentuada seja interpretada como um
+tile gráfico. Diálogos e mensagens normais continuam com a acentuação PT-BR.
 
 ### Escopo da tradução
 
@@ -45,13 +52,13 @@ Você precisa de uma cópia limpa e obtida legalmente da versão americana de
    em um novo arquivo.
 5. Confira o SHA-256 da ROM resultante antes de jogar.
 
-### Checksums da v1.2.6
+### Checksums da v1.2.7
 
 | Arquivo | SHA-256 |
 | --- | --- |
 | ROM base americana limpa (não distribuída) | `78c3b7f9ac9dbc4380237d08743a82fb04c92fb0a67c3d1803e7df5e2cea92c5` |
-| Patch `medabots-metabee-ptbr-v1.2.6.bps` | `73358db46b63922ab61817c9982c69c065ba1d604170b9f90a41e1a02d16858d` |
-| ROM resultante da v1.2.6 (não distribuída) | `a0496c49f7e2594c0fad48263c01ecd7820c156213f54717c2e3fcf8e71bdaf7` |
+| Patch `medabots-metabee-ptbr-v1.2.7.bps` | `f0120867aa506d48029a649d84ef160ec93cd8e40e1da787f5c4175cfbee89ef` |
+| ROM resultante da v1.2.7 (não distribuída) | `bcb8afbb749e70026ffe296af84722bdc1477bf1385f7ee71a122eff30a99822` |
 
 No Windows, use `Get-FileHash ARQUIVO -Algorithm SHA256` no PowerShell. No
 macOS ou Linux, use `shasum -a 256 ARQUIVO`.
