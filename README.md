@@ -10,16 +10,16 @@ brasileiro, criada por [@Erickfb](https://github.com/Erickfb).
 
 ## Versão atual
 
-**PT-BR v1.2.4** — 100% dos textos localizáveis extraídos e das interfaces
+**PT-BR v1.2.5** — 100% dos textos localizáveis extraídos e das interfaces
 gráficas mapeadas estão traduzidos e revisados. Nomes próprios, marcas e
 rótulos de botões físicos são preservados quando apropriado.
 
-Esta versão corrige a corrupção gráfica causada por nomes longos na lista da
-loja e em uma opção de batalha. Também conclui os menus de Medalhas,
-Medapeças, Medaforça e batalha, os ícones do menu circular, o mapa da cidade,
-o minijogo e os últimos letreiros em inglês. Ela mantém a correção do
-desalinhamento da câmera no começo do jogo e exibe
-`Traduzido por ERICKFB` na tela de título e no menu principal.
+Esta versão corrige estruturalmente os layouts gráficos compartilhados da loja,
+das telas de salvar, da batalha e do Medawatch. Tilemaps, bancos de paleta,
+ícones, bordas e painéis originais são preservados, evitando textos sobrepostos,
+cortados ou fora do padrão visual. Ela mantém a correção do desalinhamento da
+câmera no começo do jogo e exibe `Traduzido por ERICKFB` na tela de título, no
+menu principal e nos créditos finais.
 
 ## Como instalar
 
@@ -34,13 +34,13 @@ Você precisa de uma cópia limpa e obtida legalmente da versão americana de
    em um novo arquivo.
 5. Confira o SHA-256 da ROM resultante antes de jogar.
 
-### Checksums da v1.2.4
+### Checksums da v1.2.5
 
 | Arquivo | SHA-256 |
 | --- | --- |
 | ROM base americana limpa (não distribuída) | `78c3b7f9ac9dbc4380237d08743a82fb04c92fb0a67c3d1803e7df5e2cea92c5` |
-| Patch `medabots-metabee-ptbr-v1.2.4.bps` | `64299df83e61013382ac2a3adbdaaa172dbd090770f08e7259667be42828797c` |
-| ROM resultante da v1.2.4 (não distribuída) | `85cc98e1496536bc3899fec22328667090afae60c5cec15b9ad3304b19945a70` |
+| Patch `medabots-metabee-ptbr-v1.2.5.bps` | `8a1d6acaa5ecd5fae5200ca98bb49cbb914646073769246a352d9044ad496326` |
+| ROM resultante da v1.2.5 (não distribuída) | `b10224791287dfa00ba04c77b6b208e060c1cbcf1f236602f8c6b1b0b1396837` |
 
 No Windows, use `Get-FileHash ARQUIVO -Algorithm SHA256` no PowerShell. No
 macOS ou Linux, use `shasum -a 256 ARQUIVO`.

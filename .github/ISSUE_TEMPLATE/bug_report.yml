@@ -30,7 +30,7 @@ body:
     attributes:
       label: Versão da tradução
       options:
-        - v1.2.4
+        - v1.2.5
     validations:
       required: true
 
