@@ -1,6 +1,6 @@
 # Medabots: Metabee — tradução PT-BR
 
-Tradução completa de **Medabots: Metabee (Game Boy Advance)** para português
+Tradução textual de **Medabots: Metabee (Game Boy Advance)** para português
 brasileiro, criada por [@Erickfb](https://github.com/Erickfb).
 
 [Baixar somente a versão mais recente](https://github.com/Erickfb/medabots-metabee-ptbr/releases/latest)
@@ -10,16 +10,27 @@ brasileiro, criada por [@Erickfb](https://github.com/Erickfb).
 
 ## Versão atual
 
-**PT-BR v1.2.5** — 100% dos textos localizáveis extraídos e das interfaces
-gráficas mapeadas estão traduzidos e revisados. Nomes próprios, marcas e
-rótulos de botões físicos são preservados quando apropriado.
+**PT-BR v1.2.6** — 100% dos textos localizáveis extraídos estão traduzidos e
+revisados. Nomes próprios, marcas e rótulos de botões físicos são preservados
+quando apropriado.
 
-Esta versão corrige estruturalmente os layouts gráficos compartilhados da loja,
-das telas de salvar, da batalha e do Medawatch. Tilemaps, bancos de paleta,
-ícones, bordas e painéis originais são preservados, evitando textos sobrepostos,
-cortados ou fora do padrão visual. Ela mantém a correção do desalinhamento da
-câmera no começo do jogo e exibe `Traduzido por ERICKFB` na tela de título, no
-menu principal e nos créditos finais.
+Esta versão restaura os gráficos fixos originais para eliminar textos cortados,
+sobrepostos ou fora do layout. Ela mantém a correção do desalinhamento da câmera
+no começo do jogo e exibe `Traduzido por ERICKFB` na tela de título e a
+atribuição textual nos créditos finais.
+
+### Escopo da tradução
+
+- diálogos, textos dinâmicos, itens, técnicas, mensagens e créditos textuais
+  permanecem em PT-BR;
+- rótulos desenhados diretamente em imagens ou tiles permanecem no inglês
+  original, inclusive menu principal, `Yes/No`, entrada de nome, lojas,
+  batalha, salvar e Medawatch;
+- a única alteração gráfica é `Traduzido por ERICKFB` na tela de título.
+
+Portanto, um rótulo fixo em inglês não é, isoladamente, um erro desta edição.
+Corrupção, recorte, desalinhamento ou texto dinâmico em inglês ainda devem ser
+relatados.
 
 ## Como instalar
 
@@ -34,13 +45,13 @@ Você precisa de uma cópia limpa e obtida legalmente da versão americana de
    em um novo arquivo.
 5. Confira o SHA-256 da ROM resultante antes de jogar.
 
-### Checksums da v1.2.5
+### Checksums da v1.2.6
 
 | Arquivo | SHA-256 |
 | --- | --- |
 | ROM base americana limpa (não distribuída) | `78c3b7f9ac9dbc4380237d08743a82fb04c92fb0a67c3d1803e7df5e2cea92c5` |
-| Patch `medabots-metabee-ptbr-v1.2.5.bps` | `8a1d6acaa5ecd5fae5200ca98bb49cbb914646073769246a352d9044ad496326` |
-| ROM resultante da v1.2.5 (não distribuída) | `b10224791287dfa00ba04c77b6b208e060c1cbcf1f236602f8c6b1b0b1396837` |
+| Patch `medabots-metabee-ptbr-v1.2.6.bps` | `73358db46b63922ab61817c9982c69c065ba1d604170b9f90a41e1a02d16858d` |
+| ROM resultante da v1.2.6 (não distribuída) | `a0496c49f7e2594c0fad48263c01ecd7820c156213f54717c2e3fcf8e71bdaf7` |
 
 No Windows, use `Get-FileHash ARQUIVO -Algorithm SHA256` no PowerShell. No
 macOS ou Linux, use `shasum -a 256 ARQUIVO`.
@@ -74,8 +85,8 @@ fornece ROMs nem qualquer outro conteúdo protegido.
 **Tradução, revisão, testes e manutenção:**
 [@Erickfb](https://github.com/Erickfb)
 
-A autoria também aparece na tela de título, no menu principal e nos créditos
-finais dentro do jogo.
+A autoria também aparece na tela de título e nos créditos finais dentro do
+jogo.
 
 ## Aviso legal
 
